@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Two-Factor Authentication</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <label>{{ form.totp_code.label }}</label><br>
+    {{ form.totp_code(size=6) }}<br>
+    {% for error in form.totp_code.errors %}
+        <span class="error">{{ error }}</span>
+    {% endfor %}
+    <br>
+    <input type="submit" value="Verify">
+</form>
+{% endblock %}

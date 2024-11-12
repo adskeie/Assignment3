@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Register</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <label>{{ form.username.label }}</label><br>
+    {{ form.username(size=32) }}<br>
+    {% for error in form.username.errors %}
+        <span class="error">{{ error }}</span>
+    {% endfor %}
+    <br>
+    <label>{{ form.password.label }}</label><br>
+    {{ form.password(size=32) }}<br>
+    {% for error in form.password.errors %}
+        <span class="error">{{ error }}</span>
+    {% endfor %}
+    <br>
+    <label>{{ form.confirm.label }}</label><br>
+    {{ form.confirm(size=32) }}<br>
+    {% for error in form.confirm.errors %}
+        <span class="error">{{ error }}</span>
+    {% endfor %}
+    <br>
+    <input type="submit" value="Register">
+</form>
+{% endblock %}

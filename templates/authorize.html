@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Authorize Application</h2>
+<p>Client ID: {{ client_id }}</p>
+<p>Do you authorize this application to access your data?</p>
+<form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <input type="submit" value="Authorize">
+</form>
+{% endblock %}

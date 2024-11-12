@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #bb86fc;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #03dac6;
+}
+
+.container {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #cfcfcf;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #03dac6;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #03dac6;
+    color: #121212;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #00bfa5;
+}
+
+.error {
+    color: #cf6679;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.flash {
+    background-color: #2a2f36;
+    border: 1px solid #444;
+    color: #03dac6;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}

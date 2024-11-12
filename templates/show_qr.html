@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Set up Two-Factor Authentication</h2>
+<p>Scan this QR code with your authenticator app:</p>
+<img src="data:image/png;base64,{{ qr_code_img }}" alt="QR Code"><br><br>
+<p>After scanning, you can proceed to <a href="{{ url_for('login') }}">login</a>.</p>
+{% endblock %}
